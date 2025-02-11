@@ -4,128 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>可可诺卡 - 宠物清洁产品</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #98FF98; /* 主色调薄荷绿 */
-        }
-
-        header {
-            background-color: #FFB6C1; /* 辅助色调浅粉色 */
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        .slider {
-            width: 100%;
-            height: 300px;
-            background-color: #FFFF99; /* 辅助色调淡黄色 */
-            margin-bottom: 20px;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .gallery img {
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-        }
-
-        footer {
-            background-color: #FFB6C1; /* 辅助色调浅粉色 */
-            padding: 20px;
-            text-align: center;
-        }
-
-        .social-links a {
-            margin: 0 10px;
-        }
-
-        .contact-form {
-            margin-top: 20px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-
-        .contact-form button {
-            padding: 10px 20px;
-            background-color: #FFA500;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+    <title>COCOCOM - Pet Cleaning Products</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- 顶部导航栏 -->
     <header>
-        <h1>可可诺卡（COCOCOM）</h1>
         <nav>
-            <ul>
+            <div class="logo">
+                <img src="images/logo.png" alt="COCOCOM Logo">
+                <span style="color: #5BC0EB;">COCOCOM</span>
+            </div>
+            <ul class="menu">
                 <li><a href="#">首页</a></li>
-                <li><a href="#">关于</a></li>
-                <li><a href="#">产品</a></li>
-                <li><a href="#">联系方式</a></li>
+                <li><a href="#products">产品</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#contact">联系方式</a></li>
             </ul>
+            <a href="https://your-ecommerce-platform.com" class="cart-icon">🛒</a>
         </nav>
     </header>
-    <main>
+
+    <!-- 首屏大图轮播 -->
+    <section class="hero">
         <div class="slider">
-            <!-- 图片轮播区域 -->
+            <div class="slide" style="background-image: url('images/slide1.jpg');">
+                <h1>COCOCOM — 让清洁成为爱的表达</h1>
+                <a href="#" class="cta-button">立即选购</a>
+            </div>
+            <div class="slide" style="background-image: url('images/slide2.jpg');">
+                <h1>COCOCOM — 让清洁成为爱的表达</h1>
+                <a href="#" class="cta-button">立即选购</a>
+            </div>
+            <!-- 可添加更多轮播图 -->
         </div>
-        <div class="gallery">
-            <!-- 图片画廊区域 -->
-            <img src="product1.jpg" alt="产品1">
-            <img src="product2.jpg" alt="产品2">
-            <img src="product3.jpg" alt="产品3">
+    </section>
+
+    <!-- 核心卖点区块 -->
+    <section class="features">
+        <div class="feature">
+            <span>🧼</span>
+            <p>天然配方，温和无刺激</p>
         </div>
-    </main>
-    <footer>
-        <div class="social-links">
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="wechat.png" alt="微信"></a>
+        <div class="feature">
+            <span>🐾</span>
+            <p>宠物医生联合推荐</p>
         </div>
-        <div class="contact-form">
-            <input type="text" placeholder="姓名">
-            <input type="email" placeholder="邮箱">
-            <input type="tel" placeholder="电话">
-            <textarea placeholder="留言"></textarea>
-            <button type="submit">提交</button>
+        <div class="feature">
+            <span>🌿</span>
+            <p>环保材质，安心之选</p>
         </div>
-    </footer>
+    </section>
+
+    <!-- 产品页 -->
+    <section id="products">
+        <div class="product-nav">
+            <button data-category="all">全部</button>
+            <button data-category="shampoo">香波</button>
+            <button data-category="wipes">湿巾</button>
+            <button data-category="oral-care">口腔护理</button>
+            <button data-category="insect-repellent">驱虫喷雾</button>
+        </div>
+        <div class="product-gallery">
+            <div class="product-card" data-category="shampoo">
+                <img src="images/product1.jpg" alt="Shampoo">
+                <h3>宠物香波</h3>
+                <p>柔顺毛发，持久留香</p>
+                <span>$19.99</span>
+                <a href="#" class="view-details">查看详情</a>
+            </div>
+            <div class="product-card" data-category="wipes">
+                <img src="images/product2.jpg" alt="Wipes">
+                <h3>宠物湿巾</h3>
+                <p>清洁方便，温和护肤</p>
+                <span>$9.99</span>
+                <a href="#" class="view-details">查看详情</a>
+            </div>
+            <!-- 可添加更多产品卡片 -->
+        </div>
+    </section>
+
+    <!-- 关于页 -->
+    <section id="about">
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3 style="color: #5BC0EB;">2020年成立</h3>
+                <p>深圳市珂诺纳网络科技有限公司正式成立，开启宠物清洁产品研发之旅。</p>
+            </div>
+            <div class="timeline-item">
+                <h3 style="color: #5BC0EB;">2022年与XX机构达成合作</h3>
+                <p>与专业宠物护理机构合作，提升产品研发实力。</p>
+            </div>
+            <!-- 可添加更多里程碑 -->
+        </div>
+        <div class="partners">
+            <h3>合作伙伴</h3>
+            <div class="partner-logo">
+                <img src="images/partner1.png" alt="Partner 1">
+                <img src="images/partner2.png" alt="Partner 2">
+                <!-- 可添加更多合作伙伴 Logo -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式页 -->
+    <section id="contact">
+        <h2>随时倾听您的需求</h2>
+        <form>
+            <input type="text" placeholder="姓名" required>
+            <input type="email" placeholder="邮箱" required>
+            <textarea placeholder="留言内容" required></textarea>
+            <input type="submit" value="提交">
+        </form>
+        <div class="social-media">
+            <a href="https://wechat.com" class="social-icon">微信</a>
+            <a href="https://weibo.com" class="social-icon">微博</a>
+            <a href="https://taobao.com" class="social-icon">淘宝店</a>
+            <p>关注我们，获取专属优惠</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
