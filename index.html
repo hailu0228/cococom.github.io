@@ -1,195 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COCOCOM - Pet Cleaning Products</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Professional pet grooming services at PawPal Paradise. Luxury grooming, spa treatments, and styling services for your beloved pets.">
+    <meta name="keywords" content="pet grooming, dog grooming, cat grooming, pet spa, pet salon, pet styling, PawPal Paradise">
+    <meta property="og:title" content="PawPal Paradise - Luxury Pet Grooming & Spa">
+    <meta property="og:description" content="Professional pet grooming services at PawPal Paradise. Luxury grooming, spa treatments, and styling services for your beloved pets.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PawPal Paradise - Luxury Pet Grooming & Spa">
+    <meta name="twitter:description" content="Professional pet grooming services at PawPal Paradise. Luxury grooming, spa treatments, and styling services for your beloved pets.">
+    <title>PawPal Paradise - Luxury Pet Grooming & Spa</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
 </head>
-
 <body>
-    <!-- 顶部导航栏 -->
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/logo.png" alt="COCOCOM Logo">
-                <span style="color: #5BC0EB;">COCOCOM</span>
-            </div>
-            <ul class="menu">
-                <li><a href="#">首页</a></li>
-                <li><a href="#products">产品</a></li>
-                <li><a href="#about">关于</a></li>
-                <li><a href="#contact">联系方式</a></li>
-            </ul>
-            <a href="https://your-ecommerce-platform.com" class="cart-icon">🛒</a>
-        </nav>
-    </header>
-
-    <!-- 首屏大图轮播 -->
-    <section class="hero">
-        <div class="slider">
-            <div class="slide" style="background-image: url('images/slide1.jpg');">
-                <h1>COCOCOM — 让清洁成为爱的表达</h1>
-                <a href="#" class="cta-button">立即选购</a>
-            </div>
-            <div class="slide" style="background-image: url('images/slide2.jpg');">
-                <h1>COCOCOM — 让清洁成为爱的表达</h1>
-                <a href="#" class="cta-button">立即选购</a>
-            </div>
-            <!-- 可添加更多轮播图 -->
-        </div>
-    </section>
-
-    <!-- 核心卖点区块 -->
-    <section class="features">
-        <div class="feature">
-            <span>🧼</span>
-            <p>天然配方，温和无刺激</p>
-        </div>
-        <div class="feature">
-            <span>🐾</span>
-            <p>宠物医生联合推荐</p>
-        </div>
-        <div class="feature">
-            <span>🌿</span>
-            <p>环保材质，安心之选</p>
-        </div>
-    </section>
-
-    <!-- 产品页 -->
-    <section id="products">
-        <div class="product-nav">
-            <button data-category="all">全部</button>
-            <button data-category="shampoo">香波</button>
-            <button data-category="wipes">湿巾</button>
-            <button data-category="oral-care">口腔护理</button>
-            <button data-category="insect-repellent">驱虫喷雾</button>
-        </div>
-        <div class="product-gallery">
-            <div class="product-card" data-category="shampoo">
-                <img src="images/product1.jpg" alt="Shampoo">
-                <h3>宠物香波</h3>
-                <p>柔顺毛发，持久留香</p>
-                <span>$19.99</span>
-                <a href="#" class="view-details">查看详情</a>
-            </div>
-            <div class="product-card" data-category="wipes">
-                <img src="images/product2.jpg" alt="Wipes">
-                <h3>宠物湿巾</h3>
-                <p>清洁方便，温和护肤</p>
-                <span>$9.99</span>
-                <a href="#" class="view-details">查看详情</a>
-            </div>
-            <!-- 可添加更多产品卡片 -->
-        </div>
-    </section>
-
-    <!-- 关于页 -->
-    <section id="about">
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3 style="color: #5BC0EB;">2020年成立</h3>
-                <p>深圳市珂诺纳网络科技有限公司正式成立，开启宠物清洁产品研发之旅。</p>
-            </div>
-            <div class="timeline-item">
-                <h3 style="color: #5BC0EB;">2022年与XX机构达成合作</h3>
-                <p>与专业宠物护理机构合作，提升产品研发实力。</p>
-            </div>
-            <!-- 可添加更多里程碑 -->
-        </div>
-        <div class="partners">
-            <h3>合作伙伴</h3>
-            <div class="partner-logo">
-                <img src="images/partner1.png" alt="Partner 1">
-                <img src="images/partner2.png" alt="Partner 2">
-                <!-- 可添加更多合作伙伴 Logo -->
-            </div>
-        </div>
-    </section>
-
-    <!-- 联系方式页 -->
-    <section id="contact">
-        <h2>随时倾听您的需求</h2>
-        <form>
-            <input type="text" placeholder="姓名" required>
-            <input type="email" placeholder="邮箱" required>
-            <textarea placeholder="留言内容" required></textarea>
-            <input type="submit" value="提交">
-        </form>
-        <div class="social-media">
-            <a href="https://wechat.com" class="social-icon">微信</a>
-            <a href="https://weibo.com" class="social-icon">微博</a>
-            <a href="https://taobao.com" class="social-icon">淘宝店</a>
-            <p>关注我们，获取专属优惠</p>
-        </div>
-    </section>
-    <!--footer-->
-	<div class="footer">
-		<div class="container">
-			<div class="footer_con">
-				<div class="zhu clearfix">
-					<ul class="ul_1 clearfix">
-						<li>
-							<a href="about.html">公司简介</a>
-							<a href="about.html">品牌简介</a>
-							<a href="about.html">企业文化</a>
-							<a href="about.html">我们的团队</a>
-							<a href="about.html">品牌历史</a>
-						</li>
-						<li>
-							<a href="new.html">宠物百科</a>
-							<a href="new.html">公司新闻</a>
-							<a href="new.html">行业新闻</a>
-						</li>
-						<li>
-							<a href="pro.html">品牌产品</a>
-							<a href="pro.html">产品分类</a>
-							<a href="pro.html">产品分类</a>
-							<a href="pro.html">产品分类</a>
-							<a href="pro.html">产品分类</a>
-							<a href="pro.html">产品分类</a>
-						</li>
-						<li>
-							<a href="support.html">加盟专区</a>
-							<a href="support.html">加盟优势</a>
-							<a href="support.html">加盟流程</a>
-							<a href="support.html">加盟支持</a>
-						</li>
-						<li>
-							<a href="contact.html">联系方式</a>
-							<a href="contact.html">诚邀合作</a>
-							<a href="jop.html">加入我们</a>
-						</li>
-					</ul>
-
-					<div class="ul_2">
-						<h3>CONTACT</h3>
-						<h5>联系我们</h5>
-						<span></span>
-						<h6>联系地址：上海市虹口区水电路682号天虹国际大厦6、7、11 </h6>
-						<h6>电话：<a href="tel:86-21-65869885">86-21-65869885</a></h6>
-						<img src="images/erwei.jpg" alt="" />
-					</div>
-				</div>
-				<div class="copy_z">
-					<span class="co_zi">© 2015-2016 TRUELAND PET    SITEMAP     TERMS</span>
-					<span class="links">友情链接<span class="glyphicon glyphicon-triangle-bottom"></span>
-						<ul class="links_show">
-			           		<li><a href="">天猫商城</a></li>
-			           		<li><a href="">京东商城</a></li>
-			           		<li><a href="">苏宁易购</a></li>
-			           		<li><a href="">四季沫歌</a></li>
-		           		</ul>
-					</span>
-					<a href="http://www.71360.com/" target="_blank"><img src="images/yu.jpg" alt="" /></a>
-					&nbsp; <a href="map.html">站点地图</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Navbar.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Services.js"></script>
+    <script type="text/babel" src="components/ServiceGallery.js"></script>
+    <script type="text/babel" src="components/Testimonials.js"></script>
+    <script type="text/babel" src="components/CustomerGallery.js"></script>
+    <script type="text/babel" src="components/ServicesPage.js"></script>
+    <script type="text/babel" src="components/AboutPage.js"></script>
+    <script type="text/babel" src="components/ContactPage.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
 </body>
-
 </html>
