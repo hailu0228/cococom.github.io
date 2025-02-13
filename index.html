@@ -2,8 +2,7 @@
 <html>
 <head>
     <title>我的第一个网页</title>
-</head>
-    <style>
+        <style>
     body {
         font-family: Arial;
         background-color: #f0f0f0;
@@ -17,14 +16,17 @@
         color: white;
     }
 </style>
+</head>
+
 <body>
     <h1>你好，世界！</h1>
     <p>这是我的第一个网页。</p>
     <button onclick="alert('你点击了我！')">点我</button>
-</body>
-    <script>
+        <script>
     document.querySelector('button').addEventListener('click', function() {
         this.textContent = "你点过了！";
     });
 </script>
+</body>
+
 </html>
