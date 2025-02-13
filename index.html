@@ -3,9 +3,28 @@
 <head>
     <title>我的第一个网页</title>
 </head>
+    <style>
+    body {
+        font-family: Arial;
+        background-color: #f0f0f0;
+    }
+    h1 {
+        color: blue;
+    }
+    button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+    }
+</style>
 <body>
     <h1>你好，世界！</h1>
     <p>这是我的第一个网页。</p>
     <button onclick="alert('你点击了我！')">点我</button>
 </body>
+    <script>
+    document.querySelector('button').addEventListener('click', function() {
+        this.textContent = "你点过了！";
+    });
+</script>
 </html>
