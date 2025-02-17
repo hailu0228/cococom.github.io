@@ -1,32 +1,129 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>我的第一个网页</title>
-        <style>
-    body {
-        font-family: Arial;
-        background-color: #f0f0f0;
-    }
-    h1 {
-        color: blue;
-    }
-    button {
-        padding: 10px;
-        background-color: #4CAF50;
-        color: white;
-    }
-</style>
-</head>
+<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer_con">
+				<div class="zhu clearfix">
+					<ul class="ul_1 clearfix">
+						<li>
+							<a href="about.html">公司简介</a>
+							<a href="about.html">品牌简介</a>
+							<a href="about.html">企业文化</a>
+							<a href="about.html">我们的团队</a>
+							<a href="about.html">品牌历史</a>
+						</li>
+						<li>
+							<a href="new.html">宠物百科</a>
+							<a href="new.html">公司新闻</a>
+							<a href="new.html">行业新闻</a>
+						</li>
+						<li>
+							<a href="pro.html">品牌产品</a>
+							<a href="pro.html">产品分类</a>
+							<a href="pro.html">产品分类</a>
+							<a href="pro.html">产品分类</a>
+							<a href="pro.html">产品分类</a>
+							<a href="pro.html">产品分类</a>
+						</li>
+						<li>
+							<a href="support.html">加盟专区</a>
+							<a href="support.html">加盟优势</a>
+							<a href="support.html">加盟流程</a>
+							<a href="support.html">加盟支持</a>
+						</li>
+						<li>
+							<a href="contact.html">联系方式</a>
+							<a href="contact.html">诚邀合作</a>
+							<a href="jop.html">加入我们</a>
+						</li>
+					</ul>
 
-<body>
-    <h1>你好，世界！</h1>
-    <p>这是我的第一个网页。</p>
-    <button onclick="alert('你点击了我！')">点我</button>
-        <script>
-    document.querySelector('button').addEventListener('click', function() {
-        this.textContent = "你点过了！";
-    });
+					<div class="ul_2">
+						<h3>CONTACT</h3>
+						<h5>联系我们</h5>
+						<span></span>
+						<h6>联系地址：上海市虹口区水电路682号天虹国际大厦6、7、11 </h6>
+						<h6>电话：<a href="tel:86-21-65869885">86-21-65869885</a></h6>
+						<img src="images/erwei.jpg" alt="" />
+					</div>
+				</div>
+				<div class="copy_z">
+					<span class="co_zi">© 2015-2016 TRUELAND PET    SITEMAP     TERMS</span>
+					<span class="links">友情链接<span class="glyphicon glyphicon-triangle-bottom"></span>
+						<ul class="links_show">
+			           		<li><a href="">天猫商城</a></li>
+			           		<li><a href="">京东商城</a></li>
+			           		<li><a href="">苏宁易购</a></li>
+			           		<li><a href="">四季沫歌</a></li>
+		           		</ul>
+					</span>
+					<a href="http://www.71360.com/" target="_blank"><img src="images/yu.jpg" alt="" /></a>
+					&nbsp; <a href="map.html">站点地图</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+		
+</div>	
+
+<!--Include Js-->
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/tendina.min.js"></script>
+<!--slick-->
+<script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	    $(function(){
+		    $('.banner').slick({
+		        dots: true,
+		        autoplay:true,
+		        arrows:true,
+		        autoplaySpeed:3000,
+		    });
+		});
+		jQuery(".zx_right").slide({mainCell:".bd ul",autoPlay:true});
+</script>
+
+<!--placeholder-->
+<script src="js/jquery.placeholder.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){ $('input, textarea').placeholder(); });
+</script>
+
+<!--<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+<script src="js/wow.min.js"></script>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+	new WOW().init();
+};
+</script>
+	<script type="text/javascript">
+	
+	$('.hd').slick({
+	  slidesToShow: 3,	
+	  slidesToScroll: 1,
+	  arrows:false,
+	  focusOnSelect: true,
+	 useTransform: true,
+	 asNavFor:".bd",
+	 
+
+	});
+	$(".bd").slick({
+		fade: true,
+		dots:true,
+		useTransform: true,
+		arrows: false,
+		asNavFor:".hd",
+		autoplay:true,
+	    autoplaySpeed:3000,
+	})
+
 </script>
 </body>
-
 </html>
