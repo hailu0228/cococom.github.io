@@ -163,8 +163,8 @@ function ContactPage() {
                         </form>
 
                         <div className="space-y-2 mt-8" data-name="contact-info">
-                            <p className="text-blue-900 text-sm md:text-base">123-456-7890, info@cococom.com</p>
-                            <p className="text-blue-900 text-sm md:text-base">525 Paradise Avenue, San Francisco, CA 94158</p>
+                            <p className="text-blue-900 text-sm md:text-base">+86-15536306153, greencoconut56@gmail.com</p>
+                            <p className="text-blue-900 text-sm md:text-base">Building A, Majialong Industrial Zone, Nanshan District, Shenzhen</p>
                             <div className="flex space-x-4 mt-4">
                                 <a href="#" className="text-blue-900 hover:text-blue-700">
                                     <i className="fab fa-facebook-f"></i>
