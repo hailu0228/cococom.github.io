@@ -14,8 +14,13 @@ function Navbar({ onNavigate, currentPage }) {
                         data-name="logo"
                         onClick={() => onNavigate('home')}
                     >
-                        <i className="fas fa-paw text-white text-2xl mr-2 transform group-hover:rotate-12 transition-transform"></i>
-                        <span className="text-white text-xl font-bold">PawPal Paradise</span>
+                        {/* 替换为图片 */}
+                        <img 
+                            src="logo.png" 
+                            alt="COCOCOM Logo" 
+                            className="h-10 w-auto mr-2 transform group-hover:rotate-12 transition-transform" 
+                        />
+                        <span className="text-white text-xl font-bold">COCOCOM 可可诺卡</span>
                     </div>
 
                     {/* Mobile menu button */}
@@ -106,3 +111,5 @@ function Navbar({ onNavigate, currentPage }) {
         </nav>
     );
 }
+
+export default Navbar;
