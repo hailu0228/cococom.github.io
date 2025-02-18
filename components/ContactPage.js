@@ -72,7 +72,7 @@ function ContactPage() {
             <div className="container mx-auto px-4 py-12 md:py-16">
                 <p className="text-blue-900 text-base md:text-lg mb-4">Get in touch</p>
                 <h1 className="text-3xl md:text-5xl font-bold text-blue-900 mb-8 md:mb-12 max-w-2xl leading-tight">
-                    Let's make your pet's next grooming experience extraordinary at PawPal Paradise
+                    Let's make your pet's next grooming experience extraordinary at COCOCOM
                 </h1>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
@@ -163,7 +163,7 @@ function ContactPage() {
                         </form>
 
                         <div className="space-y-2 mt-8" data-name="contact-info">
-                            <p className="text-blue-900 text-sm md:text-base">123-456-7890, info@pawpalparadise.com</p>
+                            <p className="text-blue-900 text-sm md:text-base">123-456-7890, info@cococom.com</p>
                             <p className="text-blue-900 text-sm md:text-base">525 Paradise Avenue, San Francisco, CA 94158</p>
                             <div className="flex space-x-4 mt-4">
                                 <a href="#" className="text-blue-900 hover:text-blue-700">

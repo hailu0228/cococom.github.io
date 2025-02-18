@@ -5,14 +5,14 @@ function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
                     <div className="flex items-center group" data-name="footer-logo">
                         <i className="fas fa-paw text-blue-900 text-2xl md:text-3xl mr-2 transform group-hover:rotate-12 transition-transform"></i>
-                        <span className="text-blue-900 text-xl md:text-2xl font-bold">PawPal Paradise</span>
+                        <span className="text-blue-900 text-xl md:text-2xl font-bold">COCOCOM</span>
                     </div>
                     <div className="text-gray-600 hover:text-blue-900 transition-colors text-center md:text-left" data-name="footer-address">
                         <p className="text-base md:text-lg">525 Paradise Avenue</p>
                         <p className="text-base md:text-lg">San Francisco, CA 94158</p>
                     </div>
                     <div className="text-gray-600 hover:text-blue-900 transition-colors text-center md:text-left" data-name="footer-contact">
-                        <p className="text-base md:text-lg">info@pawpalparadise.com</p>
+                        <p className="text-base md:text-lg">info@cococom.com</p>
                         <p className="text-base md:text-lg">123-456-7890</p>
                     </div>
                     <div className="space-x-6" data-name="footer-social">
@@ -28,7 +28,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="mt-8 md:mt-12 text-center text-gray-500" data-name="footer-copyright">
-                    <p className="text-xs md:text-sm">© 2024 PawPal Paradise. All rights reserved.</p>
+                    <p className="text-xs md:text-sm">© 2024 COCOCOM. All rights reserved.</p>
                 </div>
             </div>
         </footer>
