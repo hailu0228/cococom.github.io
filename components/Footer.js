@@ -8,12 +8,12 @@ function Footer() {
                         <span className="text-blue-900 text-xl md:text-2xl font-bold">COCOCOM</span>
                     </div>
                     <div className="text-gray-600 hover:text-blue-900 transition-colors text-center md:text-left" data-name="footer-address">
-                        <p className="text-base md:text-lg">525 Paradise Avenue</p>
-                        <p className="text-base md:text-lg">San Francisco, CA 94158</p>
+                        <p className="text-base md:text-lg">Building A, Majialong Industrial Zone</p>
+                        <p className="text-base md:text-lg">Nanshan District, Shenzhen</p>
                     </div>
                     <div className="text-gray-600 hover:text-blue-900 transition-colors text-center md:text-left" data-name="footer-contact">
-                        <p className="text-base md:text-lg">info@cococom.com</p>
-                        <p className="text-base md:text-lg">123-456-7890</p>
+                        <p className="text-base md:text-lg">greencoconut56@gmail.com</p>
+                        <p className="text-base md:text-lg">+86-15536306153</p>
                     </div>
                     <div className="space-x-6" data-name="footer-social">
                         <a href="#" className="text-blue-900 text-xl md:text-2xl social-icon inline-block">
