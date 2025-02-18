@@ -16,7 +16,7 @@ function Navbar({ onNavigate, currentPage }) {
                     >
                         {/* 替换为图片 */}
                         <img 
-                            src="logo.png" 
+                            src="images/logo.png" 
                             alt="COCOCOM Logo" 
                             className="h-10 w-auto mr-2 transform group-hover:rotate-12 transition-transform" 
                         />
