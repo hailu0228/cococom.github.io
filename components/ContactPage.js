@@ -167,13 +167,13 @@ function ContactPage() {
                             <p className="text-blue-900 text-sm md:text-base">Building A, Majialong Industrial Zone, Nanshan District, Shenzhen</p>
                             <div className="flex space-x-4 mt-4">
                                 <a href="#" className="text-blue-900 hover:text-blue-700">
-                                    <i className="fab fa-taobao"></i>
+                                    <i className="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" className="text-blue-900 hover:text-blue-700">
-                                    <i className="fab fa-weixin"></i>
+                                    <i className="fab fa-twitter"></i>
                                 </a>
                                 <a href="#" className="text-blue-900 hover:text-blue-700">
-                                    <i className="fab fa-douyin"></i>
+                                    <i className="fab fa-youtube"></i>
                                 </a>
                             </div>
                         </div>
